@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Роман Белянкин](https://up.htmlacademy.ru/htmlcss/34/user/2077591).
-* Наставник: [Ярослав Баронин] (https://htmlacademy.ru/profile/id155830)
+* Наставник: [Ярослав Баронин](https://htmlacademy.ru/profile/id155830)
 
 ---
 
