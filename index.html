@@ -10,31 +10,48 @@
         <img src="#" alt="Логотип Device">
       </a>
 
-      <label>
+      <div> 
         <input type="text" name="search-text" placeholder="Текст поиска">
-      </label>
-      <label> 
-        <input type="submit" value="Найти">
-      </label>
-
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-           <a class="navigation-link" href="#">Войти</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Каталог товаров</a>
-          <button>+</button>
+          <input type="button" value="Найти">
+        </div>
+  
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navitaion-item">
+              <button>Войти</button>
+            </li>
+            <li class="navigation-item">
+              <button>Сравнить</button>
+            </li>
+            <li class="navigation-item">
+              <button>Корзина</button>
+  
+              <div>
+                <ul class="list">
+                  <li class="list-catalog">
+                    <span class="visually-hidden">
+                       <a>Любительская селфи-палка</a>
+                    </span> 
+                  </li>
+                  <li class="list-catalog">
+                    <span class="visually-hidden">
+                      <a>Профессиональная селфи-палка</a>
+                    </span>
+                </ul>
+  
+                <div>
+                  <span>Товаров:2 </span>
+                  <span>Сумма: 2000₽</span>
+                </div> 
+                <a href="#">Открыть корзину</a>   
+              </div>
+            </li>
+          </ul> 
+        
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+            <a class="navigation-link" href="#">Каталог товаров</a>
+            <button>+</button>
           <ul class="sub-menu">
             <li class="sub-menu-item">
               <a class="submenu-link" href="#">Виртуальная реальность</a>
@@ -55,14 +72,15 @@
               <a class="submenu-link" href="#">Квадракоптеры</a>
             </li>
           </ul>
-        </li>
-        <li>
-          <a class="navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
+             </li>
+             <li>
+            <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+             <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
     </header>
 
     <main class="main-index">
@@ -168,7 +186,7 @@
 
          <h2 class="visually-hidden">Слайды</h2>
 
-          <section class="photos">
+          <section class="products">
             <figure class="slides">
               <img src="#" alt="vr">
               <figcaption>Виртуальная реальность</figcaption>
@@ -194,24 +212,41 @@
               <figcaption>Квадракоптеры</figcaption>
             </figure>
           </section>
-           <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" >Доставка</a>
+
+          <section class="delivery">
+            <ol>
+              <li>
+                <label>
+                  Доставка
+                  <input class="hidden" name="slider-pagination-button" type="radio" checked>
+                </label>
+                <p>Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно! Ведь
+                  мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+                <img src="#" alt="delivery>
               </li>
-              <li class="navigation-item">
-                <a class="navigation-link">Гарантия</a>
+              <li>
+                <label>
+                  Гарантия
+                  <input class="hidden" name="slider-pagination-button" type="radio">
+                </label>
+                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не
+                  переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                </p>
+                <img src="#" alt="delivery>
               </li>
-              <li class="navigation-item">
-                <a class="navigation-link">Кредит</a>
+              <li>
+                <label>
+                  Кредит
+                  <input class="hidden" name="slider-pagination-button" type="radio">
+                </label>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас 
+                  наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+                </p>
+                <img src="#" alt="delivery>
               </li>
-           </ul>
-        <section class="delivery">
-          <h2 class="visually-hidden">Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо
-           к вашему подъезду совершенно бесплатно! Ведь
-           мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-          <img src="#" alt="Man">
+            </ol>
         </section>
         <section>
           <p> <img src="#" alt="Truck"></p>
@@ -219,29 +254,31 @@
           <span>i</span>
         </section>
 
+        <section class="contacts-adress">
+          <div>
+            <h2 class="contacts-adress">О нас</h2>
+            <p class="contacts-adress">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <ul>
+              <li>Меловые линии</li>
+              <li>СДИК</li>
+              <li>ТоксБерри</li>
+            </ul>
+            <span>Подробнее о нас</span>
+            </div>
 
-        <section class="about-us">
-          <h2 class="about-us">О нас</h2>
-          <p class="about-us-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-          <ul>
-            <li>Меловые линии</li>
-            <li>СДИК</li>
-            <li>ТоксБерри</li>
-          </ul>
-          <span>Подробнее о нас</span>
+          <div>
+            <h2 class="contacts">Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис.
+              Заодно сможете проверить работоспособность покупки. 
+            </p>
+            <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+            <address class="contacts-address">
+              <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </address>
+          </div>
         </section>
-
-        <section class="contacts">
-          <h2 class="contacts">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис.
-            Заодно сможете проверить работоспособность покупки. 
-          </p>
-          <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
-          <address class="contacts-address">
-            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
 
           <h3 class="contacts-subtitle">Время работы</h3>
             <ul class="contacts-schedule">
@@ -250,12 +287,12 @@
             </ul>
            <span>Напишите нам</span>
         </section>
-        <section class="appointment">
-          <h2 class="appointment-title">Подпишитесь на рассылку</h2>
+        <section class="subscribe">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p>Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="appointment-form-email">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="subscribe-form-email">
               <input type="text" name="address" placeholder="Ваш e-mail">
             </p>
           </form>
@@ -275,12 +312,15 @@
           <ul class="navigation-list navigation-user">
             <li class="naigation-item">
               <a class="navigation-link" href="#">Доставка</a>
+              <span class="yellow-line"></span>
             </li>
             <li class="naigation-item">
               <a class="navigation-link" href="#">Гарантия</a>
+              <span class="yellow-line"></span>
             </li>
             <li class="naigation-item">
               <a class="navigation-link" href="#">Контакты</a>
+              <span class="yellow-line"></span>
             </li>
           </ul>
           <p> Тел.: +7 (812) 812-12-12</p>

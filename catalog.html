@@ -10,43 +10,81 @@
               <img src="#" alt="Логотип Device">
             </div>
 
-            <label>
-              <input type="text" name="search-text" placeholder="Текст поиска">
-            </label>
-            <label> <input type="submit" value="Найти">
-            </label>
-            <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="naigation-item">
-                  <a class="navigation-link" href="#">Коля Петухов</a>
-                </li>
-                <li class="naigation-item">
-                  <a class="navigation-link" href="#">Выйти</a>
-                </li>
-                <li class="naigation-item">
-                  <a class="navigation-link" href="#">Сравнить</a>
-                </li>
-                <li class="naigation-item">
-                  <a class="navigation-link" href="#">Корзина</a>
-                </li>
-            </ul>
-            <ul class="navigation-list navigation-user">
-                <li class="naigation-item">
-                  <a class="navigation-link" href="#">Каталог товаров</a>
-                </li>
-                <li class="naigation-item">
-                  <a class="navigation-link" href="#">Доставка</a>
-                </li>
-                <li class="naigation-item">
-                  <a class="navigation-link" href="#">Гарантия</a>
-                </li>
-                <li class="naigation-item">
-                  <a class="navigation-link" href="#">Контакты</a>
-                </li>
-            </ul>
-                </nav>
-                <span>01</span>
-
+            <div> 
+                <input type="text" name="search-text" placeholder="Текст поиска">
+                  <input type="button" value="Найти">
+                </div>
+          
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navitaion-item">
+                            <button>Коля Петухов</button>
+                            </li>
+                        <li class="navitaion-item">
+                            <span>Выйти</span>
+                            </li>
+                        <li class="navigation-item">
+                            <button>Сравнить</button>
+                            </li>
+                        <li class="navigation-item">
+                        <button>Корзина</button>
+            
+                <div>
+                    <ul class="list">
+                        <li class="list-catalog">
+                        <span class="visually-hidden">
+                            <a>Любительская селфи-палка</a>
+                        </span> 
+                        </li>
+                        <li class="list-catalog">
+                        <span class="visually-hidden">
+                            <a>Профессиональная селфи-палка</a>
+                        </span>
+                    </ul>
+          
+                <div>
+                        <span>Товаров:2 </span>
+                        <span>Сумма: 2000₽</span>
+                        </div> 
+                        <a href="#">Открыть корзину</a>   
+                      </div>
+                    </li>
+                </ul> 
+                
+        
+                <ul class="navigation-list navigation-user">
+                    <li class="navigation-item">
+                    <a class="navigation-link" href="#">Каталог товаров</a>
+                    <button>+</button>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                      <a class="submenu-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="submenu-link" href="#">Моноподы для серлфи</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="submenu-link" href="#">Экшн-камеры</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="submenu-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="submenu-link" href="#">Умные часы</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="submenu-link" href="#">Квадракоптеры</a>
+                    </li>
+                </ul>
+                     </li>
+                     <li>
+                    <a class="navigation-link" href="#">Гарантия</a>
+                    </li>
+                    <li class="navigation-item">
+                     <a class="navigation-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main class="main-inner">
@@ -116,6 +154,7 @@
                         </ul>
                     </fieldset>
                         <a class="pagination-show-more" href="#">Показать</a>
+                        <span class="yellow-line"></span>
                 </form>
 
             <select class="select-control" aria-label="Сортировка">
@@ -188,55 +227,54 @@
                     <span class="visually-hidden">Вперед</span>
                         </a>
                     </li>
-                 </ul>
-    </section>
-    </main>
+                </ul>
+            </section>
+      </main>
 
 
 
-    <footer class="page-footer">
-        <section class="footer-adress">
-        <img class="footer-adress-logo" src="#" alt="Логотип Device">
-        <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        </section>
+        <footer class="page-footer">
+            <section class="footer-adress">
+                <img class="footer-adress-logo" src="#" alt="Логотип Device">
+                <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            </section>
 
-        <section class="navigation">
-            <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
-            <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
-            <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
-            </li>
-            </ul>
+            <section class="navigation">
+                <ul class="navigation-list navigation-user">
+                    <li class="navigation-item">
+                    <a class="navigation-link" href="#">Доставка</a>
+                    <li class="navigation-item">
+                    <a class="navigation-link" href="#">Гарантия</a>
+                    <li class="navigation-item">
+                    <a class="navigation-link" href="#">Контакты</a>
+                    </li>
+                </ul>
 
-            <p> Тел.: +7 (812) 812-12-12</p>
+                <p> Тел.: +7 (812) 812-12-12</p>
             </section>
             <section class="footer-social">
 
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a class="button" href="https://t.me/htmlacademy">
+                        <span class="visually-hidden">Telegram</span>
+                        </a>
+                    </li>
 
-    <ul class="footer-social-list">
-        <li class="footer-social-item">
-        <a class="button" href="https://t.me/htmlacademy">
-        <span class="visually-hidden">Telegram</span>
-        </a>
-        </li>
-
-        <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
-            </a>
-            </li>
-            <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Twitter</span>
-            </a>
-            </li>
-            </ul>
-            <img class="footer-logo" src="#" alt="Логотип html academy">
+                    <li class="footer-social-item">
+                        <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                        <span class="visually-hidden">YouTube</span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="button" href="https://twitter.com/htmlacademy_ru">
+                        <span class="visually-hidden">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+                    <img class="footer-logo" src="#" alt="Логотип html academy">
             </section>
-            </footer>
+        </footer>
 
     </body>
 </html>
