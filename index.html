@@ -31,15 +31,16 @@
             <ul class="catalog-list">
               <li class="catalog-list">
                 <span class="visually-hidden">
-                  <a>Любительская селфи-палка</a>
-                  <button>Удалить X</button>
+                  <a href="#">Любительская селфи-палка</a>
+                  <input type="button" value="Удалить X">
                 </span>
               </li>
               <li class="catalog-list">
                 <span class="visually-hidden">
-                  <a>Профессиональная селфи-палка</a>
-                  <button>Удалить X</button>
+                  <a href="#">Профессиональная селфи-палка</a>
+                  <input type="button" value="Удалить X">
                 </span>
+              </li>
             </ul>
 
             <div>
@@ -90,8 +91,9 @@
   </header>
 
   <main class="main-index">
-    <section class="slider-info">
-      <div>
+    <section class="slider">
+      <h1 class="visually-hidden">Магазин Девайс</h1>
+      <div class="slider-info">
         <button>предыдущий слайд</button>
         <ol class="slider-pagination">
           <li><img src="#" alt="фото1"></li>
@@ -100,126 +102,151 @@
         </ol>
         <button>следующий слайд</button>
       </div>
-
     </section>
 
-    <div>
-      <span>01</span>
-      <h2>Порхает как бабочка,жалит как пчела</h2>
-      <p class="page-header">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-        замаскированным под стандартную камеру.
-      </p>
-      <a class="button" href="#">
-        <span>Подробнее</span>
-        <span class="yellow-line"></span>
-      </a>
-      <table>
-        <tr>
-          <th>800 м</th>
-          <th>50 м</th>
-        </tr>
-        <tr>
-          <td>Дальность полёта</td>
-          <td>Радиус поражения</td>
-        </tr>
-      </table>
-    </div>
+    <section class="slider">
+      <div class="slider-info">
+        <span>01</span>
+        <h2>Порхает как бабочка,жалит как пчела</h2>
+        <p class="page-header">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+          замаскированным под стандартную камеру.
+        </p>
+        <a class="button" href="#">
+          <span>Подробнее</span>
+          <span class="yellow-line"></span>
+        </a>
+        <table>
+          <tr>
+            <th>800 м</th>
+            <th>50 м</th>
+          </tr>
+          <tr>
+            <td>Дальность полёта</td>
+            <td>Радиус поражения</td>
+          </tr>
+        </table>
+      </div>
 
-    <div>
-      <span>02</span>
-      <h2>Худеем правильно!</h2>
-      <p class="page-header">Мотивирующие фитнес-браслеты помогут найти в себе силы
-        не пропускать занятия и соблюдать диету.
-      </p>
-      <a class="button" href="#">
-        <span>Подробнее</span>
-        <span class="yellow-line"></span>
-      </a>
-      <table>
-        <tr>
-          <th>48 часов</th>
-        </tr>
-        <tr>
-          <td>Без подзарядки</td>
-        </tr>
-      </table>
-    </div>
+      <div class="slider-info">
+        <span>02</span>
+        <h2>Худеем правильно!</h2>
+        <p class="page-header">Мотивирующие фитнес-браслеты помогут найти в себе силы
+          не пропускать занятия и соблюдать диету.
+        </p>
+        <a class="button" href="#">
+          <span>Подробнее</span>
+          <span class="yellow-line"></span>
+        </a>
+        <table>
+          <tr>
+            <th>48 часов</th>
+          </tr>
+          <tr>
+            <td>Без подзарядки</td>
+          </tr>
+        </table>
+      </div>
 
-    <div>
-      <span>03</span>
-      <h2>Делай селфи, как Бен Стиллер!</h2>
-      <p class="page-header">Самая длинная палка для селфи доступна в нашем магазине
-        Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-      </p>
-      <a class="button" href="#">
-        <span>Подробнее</span>
-        <span class="yellow-line"></span>
-      </a>
-      <table>
-        <tr>
-          <th>8,5м</th>
-          <th>5 кг</th>
-          <th>Карбон</th>
-        </tr>
-        <tr>
-          <td>Длина палки</td>
-          <td>Вес палки</td>
-          <td>Материал</td>
-        </tr>
-      </table>
-    </div>
+      <div class="slider-info">
+        <span>03</span>
+        <h2>Делай селфи, как Бен Стиллер!</h2>
+        <p class="page-header">Самая длинная палка для селфи доступна в нашем магазине
+          Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+        </p>
+        <a class="button" href="#">
+          <span>Подробнее</span>
+          <span class="yellow-line"></span>
+        </a>
+        <table>
+          <tr>
+            <th>8,5м</th>
+            <th>5 кг</th>
+            <th>Карбон</th>
+          </tr>
+          <tr>
+            <td>Длина палки</td>
+            <td>Вес палки</td>
+            <td>Материал</td>
+          </tr>
+        </table>
+      </div>
 
-    <ol>
-      <li>
-        <label>
-          один
-          <input class="hidden" name="slider-pagination-button" type="radio" checked>
-        </label>
-      </li>
-      <li>
-        <label>
-          два
-          <input class="hidden" name="slider-pagination-button" type="radio">
-        </label>
-      </li>
-      <li>
-        <label>
-          три
-          <input class="hidden" name="slider-pagination-button" type="radio">
-        </label>
-      </li>
-    </ol>
-
+      <ol>
+        <li>
+          <label>
+            один
+            <input class="hidden" name="slider-pagination-button" type="radio" checked>
+          </label>
+        </li>
+        <li>
+          <label>
+            два
+            <input class="hidden" name="slider-pagination-button" type="radio">
+          </label>
+        </li>
+        <li>
+          <label>
+            три
+            <input class="hidden" name="slider-pagination-button" type="radio">
+          </label>
+        </li>
+      </ol>
+    </section>
     <h2 class="visually-hidden">Слайды</h2>
 
     <ul class="catalog-products">
-      <li class="catalog-products-item"></li>
-      <img src="#" alt="vr">
-      <figcaption>Виртуальная реальность</figcaption>
+      <li class="catalog-products-item">
+        <a href="#">
+          <figure>
+            <img src="#" alt="vr">
+            <figcaption>Виртуальная реальность</figcaption>
+          </figure>
+        </a>
       </li>
       <li class="catalog-products-item">
-        <img src="#" alt="monopods">
-        <figcaption>Моноподы для селфи</figcaption>
+        <a href="#">
+          <figure>
+            <img src="#" alt="monopods">
+            <figcaption>Моноподы для селфи</figcaption>
+          </figure>
+        </a>
       </li>
       <li class="catalog-products-item">
-        <img src="#" alt="action-camera">
-        <figcaption>Экшн камера</figcaption>
+        <a href="#">
+          <figure>
+            <img src="#" alt="action-camera">
+            <figcaption>Экшн камера</figcaption>
+          </figure>
+        </a>
       </li>
       <li class="catalog-products-item">
-        <img src="#" alt="fitness-bracelet">
-        <figcaption>Фитнес-браслеты</figcaption>
+        <a href="#">
+          <figure>
+            <img src="#" alt="fitness-bracelet">
+            <figcaption>Фитнес-браслеты</figcaption>
+          </figure>
+        </a>
       </li>
       <li class="catalog-products-item">
-        <img src="#" alt="smart-watch">
-        <figcaption>Умные часы</figcaption>
+        <a href="#">
+          <figure>
+            <img src="#" alt="smart-watch">
+            <figcaption>Умные часы</figcaption>
+          </figure>
+        </a>
       </li>
       <li class="catalog-products-item">
-        <img src="#" alt="quadrocopters">
-        <figcaption>Квадракоптеры</figcaption>
+        <a href="#">
+          <figure>
+            <img src="#" alt="quadrocopters">
+            <figcaption>Квадракоптеры</figcaption>
+          </figure>
+        </a>
       </li>
     </ul>
 
     <section class="delivery">
+      <h2 class="visually-hidden">Услуги</h2>
       <ol>
         <li>
           <label>
@@ -254,10 +281,13 @@
         </li>
       </ol>
     </section>
-    <section>
-      <p> <img src="#" alt="Truck"></p>
-      <p>Доставим редкий товар под заказ</p>
-      <span>i</span>
+    <section class="delivery-button">
+      <h2 class="visually-hidden">Кнопка заказа товара</h2>
+      <div>
+        <span>Картинка</span>
+        <h3>Доставим редкий товар под заказ</h3>
+        <span>i</span>
+      </div>
     </section>
 
     <section class="contacts-adress">
@@ -287,16 +317,16 @@
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
       </div>
-    </section>
 
-    <h3 class="contacts-subtitle">Время работы</h3>
-    <ul class="contacts-schedule">
-      <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-      <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-    </ul>
-    <a class="button" href="#">
-      <span>Напишите нам</span>
-    </a>
+
+      <h2 class="contacts-subtitle">Время работы</h2>
+      <ul class="contacts-schedule">
+        <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+        <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+      </ul>
+      <a class="button" href="#">
+        <span>Напишите нам</span>
+      </a>
     </section>
     <section class="subscribe">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -306,60 +336,56 @@
         <p class="subscribe-form-email">
           <input type="text" name="address" placeholder="Ваш e-mail">
         </p>
+        <button class="button" type="submit">Подписаться</button>
       </form>
       <form>
-        <button class="button" type="submit">Подписаться</button>
         <input type="checkbox" name="for-free" id="for-free-field" checked>
         <label for="for-free-field">Это бесплатно</label>
       </form>
     </section>
   </main>
+
   <footer class="page-footer">
     <section class="footer-adress">
-      <h2 class="visually-hidden">Адрес</h2>
+      <h2 class="visually-hidden">Лого и адрес</h2>
       <img class="footer-adress-logo" src="#" alt="Логотип Device">
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
     </section>
 
     <section class="navigation">
+      <h2 class="visually-hidden">Услуги</h2>
       <ul class="navigation-list navigation-user">
-        <li class="naigation-item">
+        <li class="navigation-item">
           <a class="navigation-link" href="#">Доставка</a>
-          <span class="yellow-line"></span>
-        </li>
-        <li class="naigation-item">
+        <li class="navigation-item">
           <a class="navigation-link" href="#">Гарантия</a>
-          <span class="yellow-line"></span>
-        </li>
-        <li class="naigation-item">
+        <li class="navigation-item">
           <a class="navigation-link" href="#">Контакты</a>
-          <span class="yellow-line"></span>
         </li>
       </ul>
-      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    </section>
 
+    </section>
     <section class="footer-social">
+      <h2 class="visually-hidden">Соцсети и телефон</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="button" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
 
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
-
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="button" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
       </ul>
-
+      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <img class="footer-logo" src="#" alt="Логотип html academy">
     </section>
   </footer>
