@@ -1,0 +1,67 @@
+header {
+    background-color: #FFE17F;
+}
+
+.service , .delivery , .subscribe {
+    background-color: #F0F0F0;
+}
+
+.page-footer {
+    background-color: #444444;
+}
+
+.navigation-list {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Rubic", sans-serif;
+}
+
+.navigation-catalog-item {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+}
+
+.nav-catalog-sub-menu-item {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Rubic", sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+}
+
+.page-header {
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    font-weight: 400;
+    font-family: "Rubic", sans-serif;
+}
+
+th {
+    font-size: 36px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Rubic", sans-serif;
+}
+
+td {
+    font-size: 16px;
+    line-height: 30px;
+    color: #444444;
+    font-weight: 400;
+    font-family: "Rubic", sans-serif;
+}

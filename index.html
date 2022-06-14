@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="page-header">
     <a href="#">
-      <img class="logo" src="#" alt="Логотип Device">
+      <img class="logo" src="images/logo.svg" alt="Логотип Device">
     </a>
 
     <nav class="navigation">
@@ -36,18 +37,20 @@
               <ul class="basket-list">
                 <li class="basket-item">
                   <a href="#">
-                    <img src="#" alt="Любительская селфи-палка">
+                    <img src="images/basket-product-1.png" alt="Любительская селфи-палка">
+                    Любительская селфи-палка
                   </a>
                   <a href="#">
-                    <img src="#" alt="Удалить">
+                    <img src="images/button-delete.svg" alt="Удалить">
                   </a>
                 </li>
                 <li class="basket-item">
                   <a href="#">
-                    <img src="#" alt="Профессиональная селфи-палка">
+                    <img src="images/basket-product-2.png" alt="Профессиональная селфи-палка">
+                    Профессиональная селфи-палка
                   </a>
                   <a href="#">
-                    <img src="#" alt="Удалить">
+                    <img src="images/button-delete.svg" alt="Удалить">
                   </a>
                 </li>
               </ul>
@@ -104,9 +107,9 @@
       <div class="slider-info">
         <button>предыдущий слайд</button>
         <ol class="slider-pagination">
-          <li><img src="#" alt="фото1"></li>
-          <li><img src="#" alt="фото2"></li>
-          <li><img src="#" alt="фото3"></li>
+          <li><img src="images/slider-1.png" alt="фото1"></li>
+          <li><img src="images/slider-2.png" alt="фото2"></li>
+          <li><img src="images/slider-3.png" alt="фото3"></li>
         </ol>
         <button>следующий слайд</button>
       </div>
@@ -208,7 +211,7 @@
         <li class="catalog-products-item">
           <a href="#">
             <figure>
-              <img src="#" alt="vr">
+              <img src="images/index-catalog-image-1.svg" alt="vr">
               <figcaption>Виртуальная реальность</figcaption>
             </figure>
           </a>
@@ -216,7 +219,7 @@
         <li class="catalog-products-item">
           <a href="#">
             <figure>
-              <img src="#" alt="monopods">
+              <img src="images/index-catalog-image-2.svg" alt="monopods">
               <figcaption>Моноподы для селфи</figcaption>
             </figure>
           </a>
@@ -224,7 +227,7 @@
         <li class="catalog-products-item">
           <a href="#">
             <figure>
-              <img src="#" alt="action-camera">
+              <img src="images/index-catalog-image-3.svg" alt="action-camera">
               <figcaption>Экшн камера</figcaption>
             </figure>
           </a>
@@ -232,7 +235,7 @@
         <li class="catalog-products-item">
           <a href="#">
             <figure>
-              <img src="#" alt="fitness-bracelet">
+              <img src="images/index-catalog-image-4.svg" alt="fitness-bracelet">
               <figcaption>Фитнес-браслеты</figcaption>
             </figure>
           </a>
@@ -240,7 +243,7 @@
         <li class="catalog-products-item">
           <a href="#">
             <figure>
-              <img src="#" alt="smart-watch">
+              <img src="images/index-catalog-image-5.svg" alt="smart-watch">
               <figcaption>Умные часы</figcaption>
             </figure>
           </a>
@@ -248,7 +251,7 @@
         <li class="catalog-products-item">
           <a href="#">
             <figure>
-              <img src="#" alt="quadrocopters">
+              <img src="images/index-catalog-image-6.svg" alt="quadrocopters">
               <figcaption>Квадракоптеры</figcaption>
             </figure>
           </a>
@@ -268,7 +271,7 @@
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
-          <img src="#" alt="delivery">
+          <img src="images/delivery.png" alt="delivery">
         </li>
         <li class="service-item">
           <label>
@@ -278,7 +281,7 @@
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не
             переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
           </p>
-          <img src="#" alt="guarantee">
+          <img src="images/guarantee.png" alt="guarantee">
         </li>
         <li class="service-item">
           <label>
@@ -288,15 +291,17 @@
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
             наиболее выгодные условия кредита. Выгодные для банка, разумеется.
           </p>
-          <img src="#" alt="credit">
+          <img src="images/credit.png" alt="credit">
         </li>
       </ol>
     </section>
 
-    <div>
-      <span>Картинка</span>
-      <h3>Доставим редкий товар под заказ</h3>
-      <span>i</span>
+    <div class="delivery">
+      <a class="button" href="#">
+        <img src="images/deliveri.svg" alt="Доставка редкого товара">
+        <h3>Доставим редкий товар под заказ</h3>
+        <img src="images/deliveri-i.svg" alt="Информация по доставке редкого товара">
+      </a>
     </div>
 
     <section class="contacts-adress">
@@ -353,7 +358,7 @@
   <footer class="page-footer">
     <section class="footer-adress">
       <h2 class="visually-hidden">Лого и адрес</h2>
-      <img class="footer-adress-logo" src="#" alt="Логотип Device">
+      <img class="footer-adress-logo" src="images/logo-yellow.svg" alt="Логотип Device">
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
     </section>
 
@@ -374,24 +379,24 @@
       <h2 class="visually-hidden">Соцсети и телефон</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
+          <a href="https://t.me/htmlacademy">
+            <img src="images/telegram.svg" alt="Telegram">
           </a>
         </li>
 
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <img src="images/youtube.svg" alt="YouTube">
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Twitter</span>
+          <a href="https://twitter.com/htmlacademy_ru">
+            <img src="images/twitter.svg" alt="Twitter">
           </a>
         </li>
       </ul>
       <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <img class="footer-logo" src="#" alt="Логотип html academy">
+      <img class="footer-logo" src="images/html-academy.svg" alt="Логотип html academy">
     </section>
   </footer>
 </body>
