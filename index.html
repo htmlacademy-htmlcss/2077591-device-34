@@ -15,10 +15,10 @@
 
     <nav class="navigation">
       <ul class="navigation-list">
-        <li class="navitaion-item">
+        <li class="navitaion-item-form">
           <form action="search" method="get">
             <input type="text" name="search-text" placeholder="Текст поиска">
-            <button type="button">Найти</button>
+            <button name="find" type="button">Найти</button>
           </form>
         </li>
         <li class="navitaion-item">
@@ -55,8 +55,8 @@
                 </li>
               </ul>
             </div>
-            <div>
-              <span>Товаров:2 </span>
+            <div class="basket-item">
+              <span>Товаров: 2 </span>
               <span>Сумма: 2000₽</span>
             </div>
             <a href="#">Открыть корзину</a>
@@ -105,13 +105,13 @@
     <section class="slider">
       <h1 class="visually-hidden">Магазин Девайс</h1>
       <div class="slider-info">
-        <button>предыдущий слайд</button>
+        <button class="slider-photo-button-prev">Предыдущий слайд</button>
         <ol class="slider-pagination">
-          <li><img src="images/slider-1.png" alt="фото1"></li>
-          <li><img src="images/slider-2.png" alt="фото2"></li>
-          <li><img src="images/slider-3.png" alt="фото3"></li>
+          <li class="slider-photo-item"><img src="images/slider-1.png" alt="фото1"></li>
+          <li class="slider-photo-item"><img src="images/slider-2.png" alt="фото2"></li>
+          <li class="slider-photo-item"><img src="images/slider-3.png" alt="фото3"></li>
         </ol>
-        <button>следующий слайд</button>
+        <button class="slider-photo-button-next">следующий слайд</button>
       </div>
     </section>
 
@@ -123,7 +123,7 @@
         <p class="page-header">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
           замаскированным под стандартную камеру.
         </p>
-        <a class="button" href="#">
+        <a class="info-button" href="#">
           <span>Подробнее</span>
           <span class="yellow-line"></span>
         </a>
@@ -145,7 +145,7 @@
         <p class="page-header">Мотивирующие фитнес-браслеты помогут найти в себе силы
           не пропускать занятия и соблюдать диету.
         </p>
-        <a class="button" href="#">
+        <a class="info-button" href="#">
           <span>Подробнее</span>
           <span class="yellow-line"></span>
         </a>
@@ -165,7 +165,7 @@
         <p class="page-header">Самая длинная палка для селфи доступна в нашем магазине
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
         </p>
-        <a class="button" href="#">
+        <a class="info-button" href="#">
           <span>Подробнее</span>
           <span class="yellow-line"></span>
         </a>
@@ -264,7 +264,7 @@
       <ol class="service-list">
         <li class="service-item">
           <label>
-            Доставка
+            <a class="info-button" href="#">Доставка</a>
             <input class="hidden" name="slider-pagination-button" type="radio" checked>
           </label>
           <p>Мы с удовольствием доставим ваш товар прямо
@@ -275,7 +275,7 @@
         </li>
         <li class="service-item">
           <label>
-            Гарантия
+            <a class="info-button" href="#">Гарантия</a>
             <input class="hidden" name="slider-pagination-button" type="radio">
           </label>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не
@@ -285,7 +285,7 @@
         </li>
         <li class="service-item">
           <label>
-            Кредит
+            <a class="info-button" href="#">Кредит</a>
             <input class="hidden" name="slider-pagination-button" type="radio">
           </label>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
@@ -315,7 +315,7 @@
           <li class="delivery-item">СДИК</li>
           <li class="delivery-item">ТоксБерри</li>
         </ul>
-        <a class="button" href="#">Подробнее о нас</a>
+        <a class="info-button" href="#">Подробнее о нас</a>
       </div>
 
       <div class="contacts">
@@ -335,7 +335,7 @@
         <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
         <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
       </ul>
-      <a class="button" href="#">Напишите нам</a>
+      <a class="info-button" href="#">Напишите нам</a>
     </section>
 
     <section class="subscribe">
@@ -348,10 +348,10 @@
         </p>
         <button class="button" type="submit">Подписаться</button>
       </form>
-      <form>
-        <input type="checkbox" name="for-free" id="for-free-field" checked>
-        <label for="for-free-field">Это бесплатно</label>
-      </form>
+      <div>
+        <img src="images/check.svg" alt="check">
+        <p>Это бесплатно</p>
+      </div>
     </section>
   </main>
 
@@ -395,7 +395,7 @@
           </a>
         </li>
       </ul>
-      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="contacts-phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <img class="footer-logo" src="images/html-academy.svg" alt="Логотип html academy">
     </section>
   </footer>
