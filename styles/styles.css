@@ -32,9 +32,37 @@ body {
     background-color: #FFFFFF;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page-title {
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+}
+
+
 /*Шапка сайта*/
 
-header {
+.page-header {
     background-color: #FFE17F;
     background-size: 100%;
 }
@@ -52,7 +80,7 @@ header {
 
 /*кнопка Найти*/
 
-.find {
+.button-find {
     text-align: center;
 }
 
@@ -68,6 +96,7 @@ header {
     text-decoration-line: none;
     background-color: #000000;
     color: #FFFFFF;
+    /*display: none;*/
 }
 
 .basket-item {
@@ -78,6 +107,7 @@ header {
     text-decoration-line: none;
     text-transform: none;
     font-style: normal;
+    color: #FFFFFF;
 }
 
 /*Блог навигации*/
@@ -103,16 +133,7 @@ header {
 
 /*Слайды*/
 
-h2 {
-    font-size: 50px;
-    line-height: 50px;
-    color: #000000;
-    font-weight: 800;
-    font-family: "Raleway", sans-serif;
-    text-align: left;
-}
-
-.page-header {
+.page-main {
     color: #444444;
     font-weight: 400;
     font-family: "Rubic", sans-serif;
@@ -129,7 +150,7 @@ h2 {
     text-transform: uppercase;
 }
 
-th {
+.slider-info-characteristics th {
     font-size: 36px;
     line-height: 30px;
     color: #000000;
@@ -138,7 +159,7 @@ th {
     text-align: left;
 }
 
-td {
+.slider-info-characteristics td {
     font-size: 16px;
     line-height: 30px;
     color: #444444;
@@ -150,7 +171,7 @@ td {
 /*Каталог продуктов*/
 
 
-figcaption {
+.catalog-products-item figcaption {
     line-height: 24px;
     font-style: ExtraBold;
     font-weight: 800;
@@ -158,7 +179,7 @@ figcaption {
     text-decoration-line: underline;
 }
 
-figure img {
+.catalog-products-item figure img {
     background-image: url("../images/fon_slide.svg")
 }
 
@@ -282,7 +303,6 @@ figure img {
     font-size: 16px;
     line-height: 19px;
     text-align: left;
-    font-style: ExtraBold;
     font-weight: 800;
     text-transform: uppercase;
 }
