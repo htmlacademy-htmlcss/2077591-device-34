@@ -17,7 +17,7 @@
       <ul class="navigation-list">
         <li class="navitaion-item-form">
           <form action="search" method="get">
-            <input type="text" name="search-text" placeholder="Текст поиска">
+            <input class="form-search" type="text" name="search-text" placeholder="Текст поиска">
             <button name="button-find" type="button">Найти</button>
           </form>
         </li>
@@ -27,7 +27,7 @@
         <li class="compare navigation-item">
           <button type="button">Сравнить</button>
         </li>
-        <li class="navigation-item">
+        <li class="basket-button navigation-item">
           <button type="button">Корзина</button>
 
           <div class="basket">
@@ -143,72 +143,72 @@
         </article>
 
 
-    <article class="slider-info-2">
-      <span>02</span>
-      <h2 class="page-title">Худеем правильно!</h2>
-      <p class="page-main">Мотивирующие фитнес-браслеты помогут найти в себе силы
-        не пропускать занятия и соблюдать диету.
-      </p>
-      <a class="info-button" href="#">
-        <span>Подробнее</span>
-        <span class="yellow-line"></span>
-      </a>
-      <table>
-        <tr>
-          <th>48 часов</th>
-        </tr>
-        <tr>
-          <td>Без подзарядки</td>
-        </tr>
-      </table>
-    </article>
+        <article class="slider-info-2">
+          <span>02</span>
+          <h2 class="page-title">Худеем правильно!</h2>
+          <p class="page-main">Мотивирующие фитнес-браслеты помогут найти в себе силы
+            не пропускать занятия и соблюдать диету.
+          </p>
+          <a class="info-button" href="#">
+            <span>Подробнее</span>
+            <span class="yellow-line"></span>
+          </a>
+          <table>
+            <tr>
+              <th>48 часов</th>
+            </tr>
+            <tr>
+              <td>Без подзарядки</td>
+            </tr>
+          </table>
+        </article>
 
-    <article class="slider-info-3">
-      <span>03</span>
-      <h2 class="page-title">Делай селфи, как Бен Стиллер!</h2>
-      <p class="page-main">Самая длинная палка для селфи доступна в нашем магазине
-        Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-      </p>
-      <a class="info-button" href="#">
-        <span>Подробнее</span>
-        <span class="yellow-line"></span>
-      </a>
-      <table>
-        <tr>
-          <th>8,5м</th>
-          <th>5 кг</th>
-          <th>Карбон</th>
-        </tr>
-        <tr>
-          <td>Длина палки</td>
-          <td>Вес палки</td>
-          <td>Материал</td>
-        </tr>
-      </table>
-    </article>
+        <article class="slider-info-3">
+          <span>03</span>
+          <h2 class="page-title">Делай селфи, как Бен Стиллер!</h2>
+          <p class="page-main">Самая длинная палка для селфи доступна в нашем магазине
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+          </p>
+          <a class="info-button" href="#">
+            <span>Подробнее</span>
+            <span class="yellow-line"></span>
+          </a>
+          <table>
+            <tr>
+              <th>8,5м</th>
+              <th>5 кг</th>
+              <th>Карбон</th>
+            </tr>
+            <tr>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+        </article>
 
-    <ol>
-      <li>
-        <label>
-          один
-          <input class="hidden" name="slider-pagination-button" type="radio" checked>
-        </label>
-      </li>
-      <li>
-        <label>
-          два
-          <input class="hidden" name="slider-pagination-button" type="radio">
-        </label>
-      </li>
-      <li>
-        <label>
-          три
-          <input class="hidden" name="slider-pagination-button" type="radio">
-        </label>
-      </li>
-    </ol>
-    </section>
-  </div>
+        <ol>
+          <li>
+            <label>
+              один
+              <input class="hidden" name="slider-pagination-button" type="radio" checked>
+            </label>
+          </li>
+          <li>
+            <label>
+              два
+              <input class="hidden" name="slider-pagination-button" type="radio">
+            </label>
+          </li>
+          <li>
+            <label>
+              три
+              <input class="hidden" name="slider-pagination-button" type="radio">
+            </label>
+          </li>
+        </ol>
+      </section>
+    </div>
     <section class="catalog-products">
       <h2 class="visually-hidden">Слайды</h2>
       <ul class="catalog-products-list">
@@ -300,10 +300,10 @@
       </ol>
     </section>
 
-    <div class="delivery">
-      <a class="button" href="#">
-        <img src="images/deliveri.svg" alt="Доставка редкого товара">
-        <h3>Доставим редкий товар под заказ</h3>
+    <div class="delivery-container delivery">
+      <a class="delivery-container button" href="#">
+        <img class="delivery-container-img" src="images/deliveri.svg" alt="Доставка редкого товара">
+        <h3 class="delivery-container-p">Доставим редкий товар под заказ</h3>
         <img src="images/deliveri-i.svg" alt="Информация по доставке редкого товара">
       </a>
     </div>
@@ -311,7 +311,7 @@
     <section class="contacts-adress">
       <div class="about">
         <h2 class="contacts page-title">О нас</h2>
-        <p class="contacts-adress">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+        <p class="contacts-adress-p">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
         </p>
         <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
         <ul class="delivery-list">
@@ -332,55 +332,57 @@
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-      </div>
 
-      <h3 class="contacts-schedule">Время работы</h3>
-      <ul class="contacts-schedule-list">
-        <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-        <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-      </ul>
-      <a class="info-button" href="#">Напишите нам</a>
+        <h3 class="contacts-schedule">Время работы</h3>
+        <ul class="contacts-schedule-list">
+          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="info-button" href="#">Напишите нам</a>
+      </div>
     </section>
 
     <section class="subscribe">
-      <h2 class="subscribe-title page-title">Подпишитесь на рассылку</h2>
-      <p>Еженедельный дайджест с обзорами новинок,
-        длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="subscribe-form-email">
-          <input type="text" name="address" placeholder="Ваш e-mail">
-        </p>
-        <button class="button" type="submit">Подписаться</button>
-      </form>
-      <div>
-        <img src="images/check.svg" alt="check">
-        <p>Это бесплатно</p>
+      <div class="subscribe-container-1">
+        <h2 class="subscribe-title page-title">Подпишитесь <br> на рассылку</h2>
+        <p class="subscribe-container-1-p">Еженедельный дайджест с обзорами новинок,
+          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      </div>
+      <div class="subscribe-container-2">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="subscribe-form-email">
+            <input class="email" type="text" name="address" placeholder="Ваш e-mail">
+          </p>
+          <button class="button-subscribe" type="submit">Подписаться</button>
+        </form>
+        <div class="subscribe-container-2-img">
+          <img class="check-img" src="images/check.svg" alt="check">
+          <p>Это бесплатно</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <section class="footer-adress">
-      <h2 class="visually-hidden">Лого и адрес</h2>
-      <img class="footer-adress-logo" src="images/logo-yellow.svg" alt="Логотип Device">
-      <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-    </section>
-
-    <section class="footer-navigation">
+    <h2 class="visually-hidden">Лого, адрес и телефон</h2>
+    <img class="footer-adress-logo" src="images/logo-yellow.svg" alt="Логотип Device">
+    <div class="container-footer-1">
+    <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="navigation-list">
         <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Доставка</a>
+          <a class="footer-navigation-link-1" href="#">Доставка</a>
         <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Гарантия</a>
+          <a class="footer-navigation-link-2" href="#">Гарантия</a>
         <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Контакты</a>
+          <a class="footer-navigation-link-3" href="#">Контакты</a>
         </li>
       </ul>
-
-    </section>
+      <a class="contacts-phone-footer" href="tel:+78128121212">Тел. +7 (812) 812-12-12</a>
+    </div>
     <section class="footer-social">
-      <h2 class="visually-hidden">Соцсети и телефон</h2>
+      <h2 class="visually-hidden">Соцсети</h2>
+      <img src="images/Vector-.svg" alt="#">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a href="https://t.me/htmlacademy">
@@ -390,7 +392,7 @@
 
         <li class="footer-social-item">
           <a href="https://www.youtube.com/user/htmlacademyru">
-            <img src="images/youtube.svg" alt="YouTube">
+            <img class="youtube-img" src="images/youtube.svg" alt="YouTube">
           </a>
         </li>
         <li class="footer-social-item">
@@ -399,7 +401,6 @@
           </a>
         </li>
       </ul>
-      <a class="contacts-phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <img class="footer-logo" src="images/html-academy.svg" alt="Логотип html academy">
     </section>
   </footer>
