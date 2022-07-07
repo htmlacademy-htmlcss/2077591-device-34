@@ -30,6 +30,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -38,6 +39,10 @@ body {
     color: #000000;
     background-color: #FFFFFF;
 
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 a {
@@ -85,6 +90,7 @@ a {
     list-style: none;
     width: 1040px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .enter {
@@ -112,7 +118,6 @@ a {
 .basket {
     font-size: 18px;
     line-height: 21px;
-    font-style: ExtraBold;
     font-weight: 800;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
@@ -287,7 +292,6 @@ a {
 
 .catalog-products-item figcaption {
     line-height: 24px;
-    font-style: ExtraBold;
     font-weight: 800;
     font-family: "Raleway", sans-serif;
     text-decoration-line: none;
@@ -299,10 +303,32 @@ a {
 
 /*Услуги*/
 
-.service-ol {
-    padding-right: 286px;
-    margin-left: 440px;
+.delivery,
+.subscribe,
+.service {
+    background-color: #F0F0F0;
+    background-size: 100%;
+}
+
+.service {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: "Rubic", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
     list-style: none;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 1160px;
+}
+
+.service-ol {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: -100px;
 }
 
 .service p {
@@ -313,29 +339,6 @@ a {
     font-weight: 400;
     font-family: "Rubic", sans-serif;
     text-align: left;
-
-}
-
-.service,
-.delivery,
-.subscribe {
-    background-color: #F0F0F0;
-    background-size: 100%;
-}
-
-.service {
-
-    font-size: 50px;
-    line-height: 50px;
-    font-weight: 400;
-    font-family: "Rubic", sans-serif;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    list-style: none;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 
@@ -408,7 +411,7 @@ a {
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
-    font-style: bold;
+    font-weight: bold;
     text-align: left;
     color: #000000;
 }
@@ -476,7 +479,6 @@ a {
 
 .subscribe-container-2-img {
     display: flex;
-    flex-direction: А;
     margin-right: 0;
 }
 
@@ -495,7 +497,9 @@ a {
 
 .footer-adress-logo {
     margin-top: 71.4px;
-    margin-left: 430px;
+    display: flex;
+    margin: 0 auto;
+    padding-right: 1020px;
 }
 
 .container-footer-1 {
@@ -637,7 +641,7 @@ a {
     font-size: 18px;
     line-height: 20px;
     text-align: left;
-    font-style: Bold;
+    font-weight: Bold;
     font-weight: 700;
 }
 
@@ -645,7 +649,7 @@ a {
     font-size: 18px;
     line-height: 20px;
     text-align: left;
-    font-style: Bold;
+    font-weight: Bold;
     font-weight: 700;
 }
 
@@ -676,7 +680,7 @@ a {
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
-    margin-left: 0 px;
+    margin-left: 0px;
 }
 
 .select-control {
