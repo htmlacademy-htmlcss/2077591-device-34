@@ -213,7 +213,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: -190px;
+    margin-top: -160px;
 }
 
 .slider-list {
@@ -224,6 +224,14 @@ a {
     margin-top: 91px;
     margin-left: auto;
     margin-right: 40px;
+}
+
+.span-01 {
+    font-weight: 700;
+    font-size: 180px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-left: 300px;
 }
 
 
@@ -293,14 +301,20 @@ a {
     padding: 5px;
 }
 
+.slider-list {
+    display: flex;
+}
+
 /*Каталог продуктов*/
+
+/*
 
 .catalog-products-list {
     list-style: none;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    width: 500px;
+    width: 1160px;
 }
 
 .catalog-products-item {
@@ -309,6 +323,7 @@ a {
     justify-content: space-between;
     width: 500px;
     margin: -17px;
+    flex-wrap: wrap;
 }
 
 .catalog-products-item figcaption {
@@ -327,6 +342,54 @@ a {
 .catalog-products-item figure img {
     background-image: url("../images/fon_slide.svg")
 }
+
+*/
+
+
+.catalog-products {
+    max-width: 1160px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.catalog-products-list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding-right: -40px;
+}
+
+.catalog-products-item figure {
+    margin: 0;
+    
+}
+
+.catalog-products-item figcaption {
+    line-height: 24px;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    text-decoration-line: none;
+    margin-top: 30px;
+    max-width: 160px;
+}
+
+.figure-catalog {
+    background-image: url("../images/fon_slide.svg");
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.figure-catalog img {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+
 
 /*Услуги*/
 
@@ -602,6 +665,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-right: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -621,6 +685,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     margin-right: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -811,13 +876,6 @@ a {
     margin-right: 200px;
 }
 
-.product-list {
-    display: flex;
-    margin-top: -10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-}
 
 .pagination {
     display: flex;
@@ -837,9 +895,21 @@ a {
     margin-right: 30px;
 }
 
+/*
+
+переделал этот блок на гриды
+
 .product-card-right {
     display: flex;
     margin-right: 120px;
+}
+
+.product-list {
+    display: flex;
+    margin-top: -10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #FFFFFF;
 }
 
 
@@ -864,6 +934,31 @@ a {
     max-width: 360px;
     justify-content: space-between;
 }
+
+*/
+
+
+.product-list {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    list-style-type: none;
+    gap: 40px;
+    background-color: #FFFFFF;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.product-list-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+.product-card-price {
+    margin-top: 23px;
+}
+
+
 
 .pagination-item {
     list-style: none;
